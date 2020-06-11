@@ -1,0 +1,22 @@
+/*--- Sass --*/
+@import './variables.scss';
+
+
+/*** Hr mixin *****/
+@mixin hrMixin {
+    width: 23%;
+    height: 5px;
+    background-color:$col_red;
+    border: none;
+    margin: 5px 0;
+}
+
+
+//backgrund-image
+// @mixin backImage($image){
+//     background: url($image);
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+// }
+

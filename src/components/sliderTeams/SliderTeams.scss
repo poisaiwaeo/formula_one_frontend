@@ -1,0 +1,275 @@
+/*--- Sass --*/
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+/*** Slider Teams ***/
+// Mobil first
+.sliderteams_wrapper{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  .sliderteams_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .sliderteams_content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .sliderteams{
+    width: 45%;
+    position: absolute;
+    top:20%;
+    transform: translateX(55%);
+    text-align:left;
+    padding: 5px;
+    margin: 30px auto;
+    overflow: hidden;
+    //background-color: chocolate;
+  }
+  .sliderteams_h2{
+    color: $col_white;
+    font-size: $fontSize__h2;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  .sliderteams_hr{
+    @include hrMixin;
+    width: 30%;
+  }
+  .sliderteams_p{
+    color: $col_lightwhite;
+    font-size: $fontSize_p;
+    margin: 10px 0;
+  }
+  .pine_left{
+    color:$col_white;
+    font-size:2rem;
+    margin: auto 20px;
+  }
+  .pine_right{
+    color:$col_white;
+    font-size:2rem;
+    margin: auto 20px;
+    cursor: pointer;
+  }
+  .sliderteams_btn{
+    width: 150px;
+    height: 40px;
+    background-color: $col_red;
+    color:$col_white;
+    border: none;
+    margin: 10px 0;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    animation: fadeIn 0.5s;
+  }
+
+}
+
+
+/*** Media Queries ***/
+//Tablet
+@media screen and (min-width:720px) {
+
+  .sliderteams_wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    .sliderteams_container{
+      width: 100%;
+      height: auto;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    .sliderteams_content{
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .sliderteams{
+      width: 30%;
+      position: absolute;
+      top:20%;
+      transform: translateX(50%);
+      text-align:left;
+      padding: 10px;
+      //background-color: chocolate;
+    }
+    .sliderteams_h2{
+      color: $col_white;
+      font-size: $fontSize__h2;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .sliderteams_hr{
+      @include hrMixin;
+      width: 20%;
+    }
+    .sliderteams_p{
+      color: $col_lightwhite;
+      font-size: $fontSize_p;
+      margin: 10px 0;
+    }
+    .pine_left{
+      color:$col_white;
+      font-size:2rem;
+      margin: auto 20px;
+    }
+    .pine_right{
+      color:$col_white;
+      font-size:2rem;
+      margin: auto 20px;
+      cursor: pointer;
+    }
+    .sliderteams_btn{
+      width: 150px;
+      height: 40px;
+      background-color: $col_red;
+      color:$col_white;
+      border: none;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fadeIn {
+      animation: fadeIn 0.5s;
+    }
+
+  }
+}
+
+
+//Pc
+@media screen and (min-width: 1280px) {
+
+  .sliderteams_wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    .sliderteams_container{
+      width: 100%;
+      height: auto;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    .sliderteams_content{
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .sliderteams{
+      width: 30%;
+      position: absolute;
+      top:20%;
+      transform: translateX(40%);
+      text-align:left;
+      padding: 10px;
+    }
+    .sliderteams_h2{
+      color: $col_white;
+      font-size: $fontSize__h2;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .sliderteams_hr{
+      @include hrMixin;
+      width: 20%;
+    }
+    .sliderteams_p{
+      color: $col_lightwhite;
+      font-size: $fontSize_p;
+      margin: 20px 0;
+    }
+    .pine_left{
+      color:$col_white;
+      font-size:2rem;
+      margin: auto 20px;
+    }
+    .pine_right{
+      color:$col_white;
+      font-size:2rem;
+      margin: auto 20px;
+      cursor: pointer;
+    }
+    .sliderteams_btn{
+      width: 150px;
+      height: 40px;
+      background-color: $col_red;
+      color:$col_white;
+      border: none;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fadeIn {
+      animation: fadeIn 0.5s;
+    }
+
+  }
+
+}

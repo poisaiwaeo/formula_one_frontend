@@ -1,0 +1,519 @@
+/*--- Sass --*/
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** Drivers ***/
+// Mobil first
+// Drivers banner
+.drivebanner_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    .drivebanner_img{
+        width: 100%;
+    }
+    .drivebanner_text{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        padding:0;
+        margin: 0;
+    }
+    .drivebanner_h1{
+        font-size:$fontSize__h4;
+        color: $col_white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    } 
+    
+}
+
+// Drivers Info
+.driversinfo_wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    background-color: $col_dark;
+
+    .driversinfo_container{
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin: 20px 20px;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .soeg_container{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .soeg_form{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .soeg_input{
+       width: 60%; 
+       height: 44px;
+       border:none;
+       margin: 0 10px 0 10px;
+    }
+    .soeg_btn{
+        width: auto;
+        height: 44px;
+        background-color: $col_red;
+        color: $col_white;
+        border: none;
+    }
+    .soeg_btn:hover{
+        opacity: 0.7;
+    }
+    .driversinfo{
+        width: 100%;
+        height: auto;
+        margin:10px auto;
+        padding: 0;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+}
+
+ // Driversinfo card
+ .driversinfo_card{
+    width: 80%;
+    height: auto;
+    margin:10px auto;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border: 1px solid $col_lightwhite;
+    border-radius: 5px;
+
+    .driversinfo_link:ul{
+        text-decoration: none;
+        list-style: none;
+    }
+    .driversinfo_header{
+        width: 90%;
+        height: auto;
+        margin: 0 0 10px 0;
+        padding: 20px;
+    }
+    .driversinfo_h4{
+        color:$col_white;
+        font-size: $fontSize__h4;
+        margin: 0;
+        padding: 0;
+    }
+    .drivebanner_hr{
+        width: 100%;
+        height: 5px;
+        background-color:$col_white;
+        border: none;
+    }
+    .driversinfo_p{
+        color:$col_lightwhite;
+        font-size: $fontSize_p;
+        padding: 0;
+    }
+    .driversinfo_span{
+        color:$col_red;
+        font-weight: bold;
+        padding: 0;
+    }
+    .driversinfo_image{
+        width: 250px;
+        height: auto;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    .driversinfo_img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .driversinfo_h2{
+        color:$col_lightwhite;
+        font-size: 45px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+}
+
+
+
+/*** Media Queries ***/
+//Tablet
+@media screen and (min-width: 720px) {
+
+          // Drivers banner
+        .drivebanner_container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: 0;
+            padding: 0;
+    
+            .drivebanner_img{
+                width: 100%;
+            }
+            .drivebanner_text{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: wrap;
+                padding:0;
+                margin: 0;
+            }
+            .drivebanner_h1{
+                font-size:$fontSize__h1;
+                color: $col_white;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        // Drivers Info
+        .driversinfo_wrapper{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            .driversinfo_container{
+                width: 90%;
+                height: auto;
+                display: flex;
+                margin: 30px auto;
+                display: flex;
+                flex-flow: wrap;
+                background-color: $col_dark;
+            }
+            .soeg_container{
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .soeg_form{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-flow: wrap;
+            }
+            .soeg_input{
+               width: 200px; 
+               height: 44px;
+               border:none;
+               margin: 0 20px;
+            }
+            .soeg_btn{
+                width: 90px;
+                height: 44px;
+                background-color: $col_red;
+                color: $col_white;
+                border: none;
+            }
+            .soeg_btn:hover{
+                opacity: 0.7;
+            }
+            .driversinfo{
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        // Driversinfo card
+        .driversinfo_card{
+            width: 200px;
+            height: auto;
+            margin: 20px 10px 0 10px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid $col_lightwhite;
+            border-radius: 5px;
+
+            .driversinfo_link{
+                text-decoration: none;
+                list-style: none;
+            }
+            .driversinfo_header{
+                width: 90%;
+                height: auto;
+                margin: 0 0 10px 0;
+                padding: 10px;
+            }
+            .driversinfo_h4{
+                color:$col_white;
+                font-size: $fontSize__h4;
+                margin: 0;
+                padding: 0;
+            }
+            .drivebanner_hr{
+                width: 100%;
+                height: 5px;
+                background-color:$col_white;
+                border: none;
+            }
+            .driversinfo_p{
+                color:$col_lightwhite;
+                font-size: $fontSize_p;
+                padding: 0;
+            }
+            .driversinfo_span{
+                color:$col_red;
+                font-weight: bold;
+                padding: 0;
+            }
+            .driversinfo_image{
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
+            .driversinfo_img{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+            .driversinfo_h2{
+                color:$col_lightwhite;
+                font-size: 45px;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 20%;
+                left: 18%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
+        }
+   
+}
+
+
+//Pc
+@media screen and (min-width: 1280px) {
+
+    // Drivers banner
+        .drivebanner_container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: 0;
+            padding: 0;
+    
+            .drivebanner_img{
+                width: 100%;
+                height: 400px;
+            }
+            .drivebanner_text{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: wrap;
+                padding:0;
+                margin: 0;
+            }
+            .drivebanner_h1{
+                font-size:$fontSize__h1;
+                color: $col_white;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        // Drivers Info
+        .driversinfo_wrapper{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: wrap;
+
+            .driversinfo_container{
+                width: 90%;
+                height: auto;
+                display: flex;
+                margin: 30px auto;
+                display: flex;
+                flex-flow: wrap;
+            }
+            .soeg_container{
+                width: 90%;
+                height: auto;
+                margin: 10px 50px;
+            }
+            .soeg_form{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-flow: wrap;
+            }
+            .soeg_input{
+               width: 200px; 
+               height: 35px;
+               border:none;
+               margin: 0 20px;
+            }
+            .soeg_btn{
+                width: 90px;
+                height: 35px;
+                background-color: $col_red;
+                color: $col_white;
+                border: none;
+            }
+            .soeg_btn:hover{
+                opacity: 0.7;
+            }
+            .driversinfo{
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+        // Driversinfo card
+        .driversinfo_card{
+            width: 230px;
+            height: auto;
+            margin: 20px 10px 0 10px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid $col_lightwhite;
+            border-radius: 5px;
+
+            .driversinfo_link{
+                text-decoration: none;
+                list-style: none;
+            }
+            .driversinfo_header{
+                width: 90%;
+                height: auto;
+                margin: 0 0 10px 0;
+                padding: 10px;
+            }
+            .driversinfo_h4{
+                color:$col_white;
+                font-size: $fontSize__h4;
+                margin: 0;
+                padding: 0;
+            }
+            .drivebanner_hr{
+                width: 100%;
+                height: 5px;
+                background-color:$col_white;
+                border: none;
+            }
+            .driversinfo_p{
+                color:$col_lightwhite;
+                font-size: $fontSize_p;
+                padding: 0;
+            }
+            .driversinfo_span{
+                color:$col_red;
+                font-weight: bold;
+                padding: 0;
+            }
+            .driversinfo_image{
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
+            .driversinfo_img{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+            .driversinfo_h2{
+                color:$col_lightwhite;
+                font-size: 45px;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 20%;
+                left: 18%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
+        } 
+}

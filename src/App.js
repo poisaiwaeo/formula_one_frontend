@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/home/Home';
+// import Teams from './components/teams/Teams';
+import Drivers from './components/drivers/Drivers';
+import Driver from './components/drivers/Driver';
+import Soeg from './components/drivers/Soeg';
+// import Calendar from './components/calendar/Calendar';
+// import Cartechnical from './components/cartechnical/Cartechnical';
+// import Fia from './components/fia/Fia';
+import Footer from './components/footer/Footer';
+import './App.scss';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <div className="App">
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          {/* <Route path="/teams" component={Teams} /> */}
+          <Route path="/drivers" component={Drivers} />
+           <Route path="/driver/:driverid" component={Driver} />    
+          <Route path="/soeg/:soegeord" component={Soeg} />
+          {/* <Route path="/calendar" component={Calendar} /> */}
+          {/* <Route path="/cartechnical" component={Cartechnical} /> */}
+          {/* <Route path="/fia" component={Fia} /> */}
+        </Switch>
+
+        <Footer />
+
+      </div>
+    </BrowserRouter>
+
   );
 }
 

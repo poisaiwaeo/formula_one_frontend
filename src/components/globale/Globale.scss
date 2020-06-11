@@ -1,0 +1,169 @@
+/*--- Sass --*/
+@import '../../scss//variables.scss';
+@import '../../scss//mixins.scss';
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+/*** Global partners ***/
+// Mobil first
+.global_wrapper{ 
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0;
+    padding: 0;
+
+    .global_container{
+        width: 100%;
+        height: auto;
+        margin: 10px 0 10px 0;
+        padding:0 20px;
+    }
+    .global_textdiv{
+        width: 94%;
+        height: auto;
+        padding:10px;
+    }
+    .global_h2{
+       color: $col_dark;
+       font-size: $fontSize__h2; 
+       font-family: $fontFamily_titel;
+       margin: 0;
+       padding:0;
+    }
+    .global_hr{
+        //include hr linje fra mixin file
+        @include hrMixin;
+    }
+    .global_img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_figure{
+        width: 185px;
+        height:auto;
+        margin: 10px;
+    }
+}
+
+
+
+/*** Media Queries ***/
+//Tablet
+@media screen and (min-width: 720px) {
+
+    .global_wrapper{ 
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        padding: 0;
+    
+        .global_container{
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            padding:0;
+        }
+        .global_textdiv{
+            width: 76%;
+            height: auto;
+            margin: 0 auto;
+            padding:10px;
+        }
+        .global_h2{
+           color: $col_dark;
+           font-size: $fontSize__h2; 
+           font-family: $fontFamily_titel;
+           margin: 0;
+           padding:0;
+        }
+        .global_hr{
+            //include hr linje fra mixin file
+            @include hrMixin;
+            width: 12%;
+        }
+        .global_img{
+            width: 80%;
+            height: auto;
+            display: flex;
+            flex-flow: wrap;
+            margin: 0 auto;
+            padding:0;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .img_figure{
+            width: 180px;
+            height: auto;
+            margin: 10px;
+        }
+    }
+
+}
+
+
+//Pc
+@media screen and (min-width:1280px) {
+
+    .global_wrapper{ 
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        padding: 0;
+    
+        .global_container{
+            width: 100%;
+            height: auto;
+            margin: 75px 0;
+            padding:0;
+        }
+        .global_textdiv{
+            width:79%;
+            height: auto;
+            padding:0;
+            margin: 0 auto;
+        }
+        .global_h2{
+           color: $col_dark;
+           font-size: $fontSize__h2; 
+           font-family: $fontFamily_titel;
+           margin: 0;
+           padding:0;
+        }
+        .global_hr{
+            //include hr linje fra mixin file
+            @include hrMixin;
+            width: 5%;
+        }
+        .global_img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .img_figure{
+            width: 185px;
+            height: 89;
+            margin:0 10px;
+            padding: 0;
+        }
+    }
+
+}

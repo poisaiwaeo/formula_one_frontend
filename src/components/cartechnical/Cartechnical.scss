@@ -1,0 +1,137 @@
+/*--- Sass --*/
+@import '../../scss//variables.scss';
+@import '../../scss/mixins.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** Cartechnical ***/
+// Mobil first
+// Cartechnical banner
+.carbanner_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+    .carbanner_img{
+        width: 100%;
+    }
+    .carbanner_text{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        padding:0;
+        margin: 0;
+    }
+    .carbanner_h2{
+        font-size: $fontSize__h4;
+        color: $col_white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+}
+   
+    
+
+/*** Media Queries ***/
+//Tablet
+@media screen and (min-width: 720px) {
+
+        // Cartechnical banner
+        .carbanner_container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            
+            .carbanner_img{
+                width: 100%;
+            }
+            .carbanner_text{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: wrap;
+                padding:0;
+                margin: 0;
+            }
+            .carbanner_h2{
+                font-size: $fontSize__h2;
+                color: $col_white;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+}
+
+
+// Pc
+@media screen and (min-width: 1280px) {
+
+    // Cartechnical banner
+    .carbanner_container{
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        .carbanner_img{
+            width: 100%;
+            height: 400px;
+        }
+        .carbanner_text{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: wrap;
+            padding:0;
+            margin: 0;
+        }
+        .carbanner_h2{
+            font-size:$fontSize__h2;
+            color: $col_white;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+        }
+    }
+ 
+}
